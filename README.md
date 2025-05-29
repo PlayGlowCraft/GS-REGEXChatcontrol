@@ -20,7 +20,7 @@ After updating the file, **reload ChatControl** or restart your server to apply 
 - Detects offensive and obfuscated terms
 - Regex rules optimized for performance and compatibility
 - Lightweight and easy to integrate
-- Actively used and maintained by GlowCraft Studios
+- Actively used and maintained
 
 ---
 
