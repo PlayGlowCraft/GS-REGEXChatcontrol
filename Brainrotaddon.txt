@@ -1,0 +1,20 @@
+#BRAINROT ADDON
+#Just copy the following lines to the bottom of your filter.
+##########################################################################################
+
+# Blocks 'sigma'
+match (?i)[^a-zA-Z0-9]?s+(\W|\d|_)*i+(\W|\d|_)*g+(\W|\d|_)*m+(\W|\d|_)*a+(\W|\d|_)*(?!\w)
+group swear
+
+# Blocks 'rizz'
+match (?i)[^a-zA-Z0-9]?r+(\W|\d|_)*i+(\W|\d|_)*z+(\W|\d|_)*z+(\W|\d|_)*(?!\w)
+group swear
+
+# Blocks 'skibidi'
+match (?i)[^a-zA-Z0-9]?s+(\W|\d|_)*k+(\W|\d|_)*i+(\W|\d|_)*b+(\W|\d|_)*i+(\W|\d|_)*d+(\W|\d|_)*i+(\W|\d|_)*(?!\w)
+group swear
+
+# Blocks 'gyat'
+match (?i)[^a-zA-Z0-9]?g+(\W|\d|_)*y+(\W|\d|_)*a+(\W|\d|_)*t+(\W|\d|_)*(?!\w)
+group swear
+
