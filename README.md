@@ -26,3 +26,5 @@ After updating the file, **reload ChatControl** or restart your server to apply 
 
 Maintained by **GlowCraft Studios**.  
 Free to use, adapt, and share.
+
+Original list https://github.com/GamerSafer/word-blocklist
