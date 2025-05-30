@@ -1,6 +1,6 @@
 # GS-Regex – Chatcontrol
 
-This repository contains a regex-based filter list designed for use with **ChatControl** (non-Pro).
+This repository contains a regex-based filter list designed for use with **ChatControl**.
 
 ## 📄 File Included
 
