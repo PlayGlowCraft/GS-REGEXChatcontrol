@@ -157,7 +157,7 @@ match (?i)[^a-zA-Z0-9]?(a+(\W|\d|_)*r+(\W|\d|_)*y+(\W|\d|_)*a+(\W|\d|_)*n+(\W|\d
 group swear
 
 # Blocks 'ass'
-match (?i)[^a-zA-Z0-9]?(a+(\W|\d|_)*s+(\W|\d|_)*s+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-z0-9])a+(\W|\d|_)*s+(\W|\d|_)*s+(?![a-z0-9])
 group swear
 
 # Blocks 'assfuck'
@@ -5817,7 +5817,7 @@ match (?i)[^a-zA-Z0-9]?(t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*i+(\W|\d|_)*e+(\W|\d
 group swear
 
 # Blocks 'tits'
-match (?i)[^a-zA-Z0-9]?(t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*s+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-z0-9])t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*s+(?![a-z0-9])
 group swear
 
 # Blocks 'titt'
