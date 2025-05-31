@@ -3141,7 +3141,7 @@ match (?i)[^a-zA-Z0-9]?(g+(\W|\d|_)*i+(\W|\d|_)*r+(\W|\d|_)*l+(\W|\d|_)*s+(\W|\d
 group swear
 
 # Blocks 'git'
-match (?i)[^a-zA-Z0-9]?(g+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-z0-9])g+(\W|\d|_)*i+(\W|\d|_)*t+(?![a-z0-9])
 group swear
 
 # Blocks 'glans'
@@ -5089,7 +5089,7 @@ match (?i)[^a-zA-Z0-9]?(r+(\W|\d|_)*t+(\W|\d|_)*a+(\W|\d|_)*r+(\W|\d|_)*d+(\W|\d
 group swear
 
 # Blocks 'rum'
-match (?i)[^a-zA-Z0-9]?(r+(\W|\d|_)*u+(\W|\d|_)*m+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-z0-9])r+(\W|\d|_)*u+(\W|\d|_)*m+(?![a-z0-9])
 group swear
 
 # Blocks 'rump'
