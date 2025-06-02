@@ -5,7 +5,7 @@
 #isn't blocked or a word that is blocked and shouldn't feel free to let me know. This is    #
 #setup to use ChatControl Red. If you would like to see a diffrent setup for other plugins  #
 #let me know and i will try to assist.                                                      #
-#V2.2                                                                                       #
+#V2.3                                                                                       #
 #############################################################################################
 
 #######VERIFIED LIST WORDS############
@@ -4373,7 +4373,7 @@ match (?i)[^a-zA-Z0-9]?(n+(\W|\d|_)*o+(\W|\d|_)*b+(\W|\d|_)*j+(\W|\d|_)*o+(\W|\d
 group swear
 
 # Blocks 'nonce'
-match (?i)[^a-zA-Z0-9]?(n+(\W|\d|_)*o+(\W|\d|_)*n+(\W|\d|_)*c+(\W|\d|_)*e+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-z0-9])n+(\W|\d|_)*o+(\W|\d|_)*n+(\W|\d|_)*c+(\W|\d|_)*e+(?![a-z0-9])
 group swear
 
 # Blocks 'nooky'
