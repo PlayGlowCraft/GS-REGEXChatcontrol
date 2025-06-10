@@ -5,7 +5,7 @@
 #isn't blocked or a word that is blocked and shouldn't feel free to let me know. This is    #
 #setup to use ChatControl Red. If you would like to see a diffrent setup for other plugins  #
 #let me know and i will try to assist.                                                      #
-#V2.3                                                                                       #
+#V2.4                                                                                       #
 #############################################################################################
 
 #######VERIFIED LIST WORDS############
@@ -137,7 +137,7 @@ match (?i)[^a-zA-Z0-9]?(a+(\W|\d|_)*r+(\W|\d|_)*e+(\W|\d|_)*o+(\W|\d|_)*l+(\W|\d
 group swear
 
 # Blocks 'arian'
-match (?i)[^a-zA-Z0-9]?(a+(\W|\d|_)*r+(\W|\d|_)*i+(\W|\d|_)*a+(\W|\d|_)*n+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-zA-Z])a+(\W|\d|_)*r+(\W|\d|_)*i+(\W|\d|_)*a+(\W|\d|_)*n+(?![a-zA-Z])
 group swear
 
 # Blocks 'arrse'
@@ -4217,11 +4217,7 @@ match (?i)[^a-zA-Z0-9]?(n+(\W|\d|_)*1+(\W|\d|_)*g+(\W|\d|_)*g+(\W|\d|_)*a+(\W|\d
 group swear
 
 # Blocks 'nad'
-match (?i)[^a-zA-Z0-9]?(n+(\W|\d|_)*a+(\W|\d|_)*d+(\W|\d|_)*)(?!\w)
-group swear
-
-# Blocks 'nads'
-match (?i)[^a-zA-Z0-9]?(n+(\W|\d|_)*a+(\W|\d|_)*d+(\W|\d|_)*s+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-zA-Z])n[\W\d_]*(a|4|@)[\W\d_]*d([\W\d_]*(s|5))?(?![a-zA-Z])
 group swear
 
 # Blocks 'naked'
@@ -4742,6 +4738,10 @@ group swear
 
 # Blocks 'pleasurechest'
 match (?i)[^a-zA-Z0-9]?(p+(\W|\d|_)*l+(\W|\d|_)*e+(\W|\d|_)*a+(\W|\d|_)*s+(\W|\d|_)*u+(\W|\d|_)*r+(\W|\d|_)*e+(\W|\d|_)*c+(\W|\d|_)*h+(\W|\d|_)*e+(\W|\d|_)*s+(\W|\d|_)*t+(\W|\d|_)*)(?!\w)
+group swear
+
+# Blocks 'pmo'
+match (?i)(?<![a-zA-Z])p+(\W|\d|_)*m+(\W|\d|_)*o+(?![a-zA-Z])
 group swear
 
 # Blocks 'polack'
@@ -5696,6 +5696,10 @@ group swear
 match (?i)[^a-zA-Z0-9]?(s+(\W|\d|_)*w+(\W|\d|_)*i+(\W|\d|_)*n+(\W|\d|_)*g+(\W|\d|_)*e+(\W|\d|_)*r+(\W|\d|_)*)(?!\w)
 group swear
 
+# Blocks 'sybau'
+match (?i)[^a-zA-Z0-9]?s+(\W|\d|_)*y+(\W|\d|_)*b+(\W|\d|_)*a+(\W|\d|_)*u+(\W|\d|_)*(?!\w)
+group swear
+
 # Blocks 'taff'
 match (?i)(^|[^a-zA-Z0-9])t+(\W|_|\d)*a+(\W|_|\d)*f+(\W|_|\d)*f+(\W|_|\d)*(?!\w)
 group swear
@@ -5817,11 +5821,11 @@ match (?i)[^a-zA-Z0-9]?(t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*i+(\W|\d|_)*e+(\W|\d
 group swear
 
 # Blocks 'tits'
-match (?i)(?<![a-z0-9])t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*s+(?![a-z0-9])
+match (?i)(?<![a-zA-Z0-9])t[\W\d_]*i[\W\d_]*t(?![a-zA-Z0-9])
 group swear
 
 # Blocks 'titt'
-match (?i)[^a-zA-Z0-9]?(t+(\W|\d|_)*i+(\W|\d|_)*t+(\W|\d|_)*t+(\W|\d|_)*)(?!\w)
+match (?i)(?<![a-zA-Z0-9])t[\W\d_]*i[\W\d_]*t[\W\d_]*t?[\W\d_]*s(?![a-zA-Z0-9])
 group swear
 
 # Blocks 'tittie5'
